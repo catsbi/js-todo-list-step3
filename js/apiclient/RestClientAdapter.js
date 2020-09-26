@@ -1,11 +1,9 @@
 import { RestClient } from "./RestClient.js";
-
+import { BASE_URL } from "../data/constant.js";
 export const RestClinetAdapter = class extends RestClient {
   constructor() {
     super(BASE_URL);
   }
-  execute() {
-    // 로딩바추가
-    super.execute();
-  }
 };
+
+export default RestClinetAdapter;
