@@ -1,5 +1,5 @@
 import { stringToHTML } from "../../utils/index.js";
-import AbstTodoListFactory from "../AbstTodoListFactory.js";
+import { AbstTodoListFactory } from "../AbstTodoListFactory.js";
 
 export const TeamCardFactoryImpl = class extends AbstTodoListFactory {
   frame() {

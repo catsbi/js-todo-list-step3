@@ -1,5 +1,8 @@
 export const AbstTodoListFactory = class {
-  template;
+  template;state;
+  constructor(state) {
+    this.state = state;
+  }
 
   frame() {}
   title() {}
