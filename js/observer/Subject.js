@@ -1,8 +1,12 @@
 export const Subject = class {
-    #observers;
+    #observers;_state;_service;
 
     constructor(observers = []) {
         this.#observers = new Set(observers);
+    }
+
+    setState(state){
+        this._state = {...this._state, ...state};
     }
 
     addObservers(...observers) {
